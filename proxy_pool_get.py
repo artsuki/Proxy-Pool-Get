@@ -68,7 +68,7 @@ class ProxyGetter:
         return
     
     def address_wash(self):
-        with open('E:\MyCodes\MyData\proxy_pool.txt', 'r') as fp:
+        with open('proxy_pool.json', 'r') as fp:
             if json.load(fp):
                 self.address.extend(json.load(fp))
         self.address = list(set(self.address))
